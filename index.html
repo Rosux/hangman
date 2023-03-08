@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <script defer src="wordlist.js"></script>
+    <script defer src="main.js"></script>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #505050;
+            color: #ffffff;
+            font-family: "Roboto";
+        }
+        .output{
+            font-size: 5rem;
+            padding-bottom: 2rem;
+        }
+        .message{
+            text-align: center;
+            font-size: 1rem;
+            box-sizing: border-box;
+            padding-bottom: 2rem;
+        }
+        input{
+            border: none;
+            outline: none;
+            background-color: #505050;
+            color: #ffffff;
+            border: solid 0.1rem #fff;
+            box-sizing: border-box;
+            padding: .5rem 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="tries"></div>
+    <div class="output"></div>
+    <div class="message"></div>
+    <input placeholder="Input">
+</body>
+</html>
